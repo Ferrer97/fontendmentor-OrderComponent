@@ -1,0 +1,145 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+  
+body {
+    font-size: 1.6rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app{
+    max-width: 40rem;
+    padding: 1rem;
+}
+
+.app__image{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.app__content{
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.app__heading{
+    text-align: center;
+    font-weight: 900;
+}
+
+.app__descripcion {
+    color: gray;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.app__plan{
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    margin-block: 2rem;
+}
+
+.app__image-2{
+    padding: 1rem;
+}
+
+.app__anual{
+    font-weight: 900;
+    padding-left: 1rem;
+    margin: 2rem 0rem 0 1rem;
+}
+
+.app__price{
+    padding-left: 1rem;
+    margin: 0 0 0 1rem;
+    color: gray;
+}
+
+.app__charge{
+    margin: 3rem 0 3rem 4rem;
+}
+
+.app__charge:hover {
+    text-decoration: none;
+    color: hsl(253, 68%, 58%);
+    cursor: pointer;
+}
+
+.app__botton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__accept{
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+}
+
+.app__accept:hover{
+    cursor: pointer;
+    background-color: hsl(253, 68%, 58%);
+}
+
+
+.app__cancel{
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 2rem;
+    color: gray;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    width: 90%
+}
+
+.app__cancel:hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 400px) { 
+    .app__plan {
+        display: flex;
+        justify-content: space-evenly;
+    } 
+}
